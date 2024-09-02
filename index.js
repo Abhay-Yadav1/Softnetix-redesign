@@ -1,3 +1,5 @@
+*/Connect your own database and create tables android , frontend and backend and talk with the specified coloumns /*
+
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
@@ -7,8 +9,8 @@ const port = 3000;
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
-  database: "world",
-  password: "abhay123",
+  database: "",
+  password: "",
   port: 5432,
 });
 db.connect();
